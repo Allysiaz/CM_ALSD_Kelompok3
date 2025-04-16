@@ -17,6 +17,5 @@ public class MataKuliah {
         System.out.println("Nama mata kuliah    : ");
         System.out.println("Kode mata kuliah    : ");
         System.out.println("Jumlah SKS          : ");
-        System.out.println("HEY");
     }
 }
