@@ -28,10 +28,19 @@ public class MainMahasiswa {
                     mk.tampilMataKuliah();
                     break;
                 case 3:
+                    System.out.println("Data Penilaian:");
+                    break;
+                case 4:
+                    System.out.println("Urutan Mahasiswa berdasarkan Nilai Akhir: ");
+                    break;
+                case 5:
+                    System.out.println("Masukkan NIM Mahasiswa yang dicari:");
+                    break;
+                case 0:
                     System.out.println("Daftar Penilaian:");
-                    break;
+                    return;
                 default:
-                    break;
+                    System.out.println("Pilihan Tidak Valid!");
             }
         }
     }
