@@ -16,6 +16,6 @@ public class Penilaian {
     }
 
     void hitungNilaiAkhir() {
-        System.out.println("");
+        System.out.println("gg");
     }
 }

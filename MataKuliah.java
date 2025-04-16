@@ -14,7 +14,7 @@ public class MataKuliah {
     }
 
     void tampilMataKuliah() {
-        System.out.println("Nama mata kuliah    : ");
+        System.out.println("Nama mata kuliah    : sib ");
         System.out.println("Kode mata kuliah    : ");
         System.out.println("Jumlah SKS          : ");
     }
