@@ -3,6 +3,8 @@ public class MainMahasiswa {
     public static void main(String[] args) {
         Scanner sc = new Scanner (System.in);
         Mahasiswa daftarMahasiswa = new Mahasiswa();
+        MataKuliah mk = new MataKuliah();
+
 
         while (true) {
             System.out.println("=== MENU SISTEM AKADEMIK ===");
@@ -18,9 +20,16 @@ public class MainMahasiswa {
 
             switch (pilihan) {
                 case 1:
-                    
+                    System.out.println("Daftar Mahasiswa:");
+                    daftarMahasiswa.tampilMahasiswa();
                     break;
-            
+                case 2:
+                    System.out.println("Daftar Mata Kuliah:");
+                    mk.tampilMataKuliah();
+                    break;
+                case 3:
+                    System.out.println("Daftar Penilaian:");
+                    break;
                 default:
                     break;
             }
