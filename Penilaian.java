@@ -7,15 +7,15 @@ public class Penilaian {
     Mahasiswa mahasiswa = new Mahasiswa();
     MataKuliah mk = new MataKuliah();
 
-    public Penilaian (String mahasiswa, String mataKuliah, double tugas, double uts, double uas) {
-    
+    public Penilaian(String mahasiswa, String mataKuliah, double tugas, double uts, double uas) {
+
         mahasiswa = mahasiswa;
         nilaiTugas = tugas;
         nilaiUTS = uts;
-        nilaiUAS = uas ;
+        nilaiUAS = uas;
     }
 
-    void hitungNilaiAkhir (){
+    void hitungNilaiAkhir() {
         System.out.println("");
     }
 }
