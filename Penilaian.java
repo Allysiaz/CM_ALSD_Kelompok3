@@ -5,6 +5,7 @@ public class Penilaian {
     double nilaiAkhir;
 
     Mahasiswa mahasiswa = new Mahasiswa();
+    MataKuliah mk = new MataKuliah();
 
     public Penilaian (String mahasiswa, String mataKuliah, double tugas, double uts, double uas) {
     
