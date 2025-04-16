@@ -1,3 +1,5 @@
 public class SiakadNilai {
-    String class;
+    String kelas;
+    String nama;
+    
 }
