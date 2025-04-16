@@ -3,7 +3,7 @@ public class MataKuliah {
     String namaMK;
     int sks;
 
-    public MataKuliah () {
+    public MataKuliah() {
 
     }
 
