@@ -1,10 +1,20 @@
 import java.util.Scanner;
+
 public class MainMahasiswa {
     public static void main(String[] args) {
-        Scanner sc = new Scanner (System.in);
-        Mahasiswa daftarMahasiswa = new Mahasiswa();
-        MataKuliah mk = new MataKuliah();
+        Scanner sc = new Scanner(System.in);
 
+        Mahasiswa[] daftarMahasiswa = {
+                new Mahasiswa("22001", "Ali Rahman", "Informatika"),
+                new Mahasiswa("22002", "Budi Santoso", "Informatika"),
+                new Mahasiswa("22003", "citra Dewi", "Sistem Informasi Bisnis"),
+        };
+
+        MataKuliah[] mk = {
+                new MataKuliah("MK001", "Struktur Data", 3),
+                new MataKuliah("MK002", "Basis Data", 3),
+                new MataKuliah("MK003", "Desain Web", 3),
+        };
 
         while (true) {
             System.out.println("=== MENU SISTEM AKADEMIK ===");
@@ -21,11 +31,11 @@ public class MainMahasiswa {
             switch (pilihan) {
                 case 1:
                     System.out.println("Daftar Mahasiswa:");
-                    daftarMahasiswa.tampilMahasiswa();
+                    daftarMahasiswa[i].tampilMahasiswa();
                     break;
                 case 2:
                     System.out.println("Daftar Mata Kuliah:");
-                    mk.tampilMataKuliah();
+                    mk[i].tampilMataKuliah();
                     break;
                 case 3:
                     System.out.println("Data Penilaian:");
