@@ -80,7 +80,7 @@ public class MainMahasiswa {
                         penilaian.hitungNilaiAkhir();
                     }
                     for (Penilaian p : nilai) {
-                        System.out.println(p.mahasiswa.nama + " | " + p.mataKuliah.namaMK + " | Nilai Akhir: " + p.nilaiAkhir );
+                        System.out.println(p.mahasiswa.nama + "\t| " + p.mataKuliah.namaMK + "\t| Nilai Akhir: " + p.nilaiAkhir );
             }
                     break;
                 case 4:
@@ -99,7 +99,7 @@ public class MainMahasiswa {
                         }
                     }
                     for (Penilaian p : nilai) {
-                                System.out.println(p.mahasiswa.nama + " | " + p.mataKuliah.namaMK + " | Nilai Akhir: " + p.nilaiAkhir );
+                                System.out.println(p.mahasiswa.nama + "\t| " + p.mataKuliah.namaMK + "\t| Nilai Akhir: " + p.nilaiAkhir );
                     }
                     break;
                 case 5:
