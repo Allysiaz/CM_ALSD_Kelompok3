@@ -103,9 +103,22 @@ public class MainMahasiswa {
                     }
                     break;
                 case 5:
-                    System.out.println("Masukkan NIM Mahasiswa yang dicari:");
+                    System.out.print("Masukkan NIM Mahasiswa yang dicari:");
+                    String nimCari = sc.nextLine();
+                    boolean ditemukan =false;
+                    for (int i = 0; i < daftarMahasiswa.length; i++) {
+                        if (daftarMahasiswa[i].NIM.equalsIgnoreCase(nimCari)) {
+                            daftarMahasiswa[i].tampilMahasiswa();
+                            ditemukan = true;                          
+                        }
+                    }
+                    if (!ditemukan) {
+                        System.out.println("Tidak ada Mahasiswa dengan NIM tersebut!");
+                    }
                     break;
                 case 0:
+                    System.out.println("Program selesai. Terima kasih!");
+                    sc.close();
                     return;
                 default:
                     System.out.println("Pilihan Tidak Valid!");
