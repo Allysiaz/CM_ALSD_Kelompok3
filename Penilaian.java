@@ -16,7 +16,7 @@ public class Penilaian {
 
     public double hitungNilaiAkhir() {
         nilaiAkhir = 0.3 * nilaiTugas + 0.3 * nilaiUTS + 0.4 * nilaiUAS;
-        System.out.println(mahasiswa.nama + " | " + mataKuliah.namaMK + " | " + " Nilai Akhir :" + nilaiAkhir);
+        
         return nilaiAkhir;
     }
 

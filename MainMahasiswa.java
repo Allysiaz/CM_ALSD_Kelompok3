@@ -79,12 +79,27 @@ public class MainMahasiswa {
                     for (Penilaian penilaian : nilai) {
                         penilaian.hitungNilaiAkhir();
                     }
+                    for (Penilaian p : nilai) {
+                        System.out.println(p.mahasiswa.nama + " | " + p.mataKuliah.namaMK + " | Nilai Akhir: " + p.nilaiAkhir );
+            }
                     break;
                 case 4:
                     System.out.println("Urutan Mahasiswa berdasarkan Nilai Akhir: ");
-                    double total = 0;
-                    for (Penilaian penilaian : nilai) {
-                        total += penilaian.hitungNilaiAkhir();
+                    for (Penilaian p : nilai) {
+                        p.hitungNilaiAkhir();
+                    }
+
+                    for (int i = 0; i < nilai.length - 1; i++) {
+                        for (int j = 0; j < nilai.length - i - 1; j++) {
+                           if (nilai[j].nilaiAkhir < nilai [j + 1].nilaiAkhir) {
+                            Penilaian temp = nilai[j];
+                            nilai[j] = nilai [j+1];
+                            nilai[j+1] = temp;
+                           } 
+                        }
+                    }
+                    for (Penilaian p : nilai) {
+                                System.out.println(p.mahasiswa.nama + " | " + p.mataKuliah.namaMK + " | Nilai Akhir: " + p.nilaiAkhir );
                     }
                     break;
                 case 5:
