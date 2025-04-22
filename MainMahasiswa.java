@@ -9,7 +9,7 @@ public class MainMahasiswa {
         mhs0.NIM = "22001"; 
         mhs0.nama = "Ali Rahman";
         mhs0.prodi = "Informatika";
-        daftarMahasiswa[0] = mhs0; 
+        daftarMahasiswa[0] = mhs0;  
 
         Mahasiswa mhs1 = new Mahasiswa();
         mhs1.NIM = "22002";
